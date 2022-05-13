@@ -1,0 +1,18 @@
+.footer {
+  background: $color-footer;
+  padding: 0px 0px 0px 10px;
+  &__svg {
+    width: 125px;
+    height: 35px;
+    path {
+      fill: $color-white;
+    }
+  }
+  &__ul {
+    &__a {
+      &__li {
+        color: $color-white;
+      }
+    }
+  }
+}
