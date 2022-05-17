@@ -1,7 +1,10 @@
 
-@import "utils/variables.scss";
-@import "utils/mixin.scss";
-@import "base/base.scss";
-@import "Layout/footer.scss";
-@import "Pages/project.scss";
-@import "Composants/header.scss";
+@import "utils/variables";
+@import "utils/mixin";
+@import "base/base";
+@import "Layout/footer";
+@import "Layout/navbar";
+@import "Pages/project";
+@import "Layout/header";
+@import "Composants/pinfo";
+@import "Composants/description";

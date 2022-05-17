@@ -3,3 +3,12 @@
     @content
   }
 }
+
+@mixin dark-color($colour: $colour-primary) {
+  @if ( lightness($colour) < 25% ) {
+    $colour: lighten($colour, 10%);
+  }@else{
+    $colour: darken($colour, 35%);
+  }
+  color: $colour;
+}

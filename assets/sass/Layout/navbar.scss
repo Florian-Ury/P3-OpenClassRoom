@@ -1,0 +1,51 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: white;
+
+    &__ol {
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+      &__a{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 15px 15px 15px 0px;
+        background: #F2F2F2;
+        margin: 15px 15px 15px 5px;
+        border-radius: 15px;
+        -webkit-box-shadow: 0px 15px 22px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 15px 22px 0px rgba(0,0,0,0.2);
+        &__p {
+          padding: 1px 7px;
+          font-size: 20px;
+          position: absolute;
+          background: $color-primary;
+          border-radius: 30px;
+          color: white;
+        }
+        &__li {
+          display: flex;
+          text-align: center;
+          color: black;
+          padding: 0px 25px;
+          font-size: 1.3em;
+          list-style: decimal;
+
+        }
+        &__icon{
+          padding: 5px 20px;
+        }
+        &__icon:hover{
+          padding: 0px 20px;
+          color: $color-primary;
+        }
+      }
+      &__a:hover{
+        background: rgba($color-primary,0.2);
+        color: $color-primary;
+      }
+    }
+}
