@@ -1,0 +1,144 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover
+  }
+  &__divmain {
+    padding: 15px;
+    background: #F2F2F2;
+    margin: -50px 0px 0px 0px;
+    width: 99.8%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    &__div {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0px;
+      align-items: center;
+    }
+    &__section {
+      margin: 5px 0px;
+      animation: ApparitionMenu 800ms ease 500ms 1 normal both;
+
+      &__separator {
+        display: inline-block;
+        padding: 0px 30px;
+        margin: 0px 0px 5px 0px;
+        border-bottom: 2px solid $color-tertiary;
+      }
+
+      &__item {
+        display: flex;
+        cursor: pointer;
+        background: $color-white;
+        border-radius: 20px;
+        height: 62px;
+        align-items: center;
+        padding: 0px 0px 0px 5px;
+        margin: 10px 0px;
+        animation: ApparitionMenu 800ms ease 500ms 1 normal both;
+        overflow: hidden;
+
+        &__div {
+          width: 100%;
+        }
+
+        &__span {
+          display: flex;
+          justify-content: space-between;
+          margin-right: 10px;
+        }
+
+        &__checkup {
+          display: flex;
+          width: 0%;
+          height: 62px;
+          font-size: 20px;
+          color: white;
+          background: $color-tertiary;
+          align-items: center;
+          justify-content: center;
+          transform: translateX(0px);
+          transition: transform 0.3s, width 0.3s,font-size 0.3s ease-in-out;
+
+        }
+      }
+      &__item:active &__item__checkup {
+        display: flex;
+        height: 65px;
+        width: 65px;
+        border-radius: 0px 20px 20px 0px;
+        font-size: 20px;
+        animation: SlideInLeft 0.5s ease 0s 1 normal forwards;
+
+      }
+      &__item:active .iconMenu {
+        animation: rotateIcon 1s ease 0s 1 normal forwards;
+      }
+
+      &__item:active .descriptionPlat {
+        @media only screen and (max-width: $breakpointMobile) {
+          width: 200px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+
+      &__item:active .prix {
+        animation: SlideInRight 0.5s ease 0s 1 normal forwards;
+      }
+    }
+  }
+  .ENTRE {
+    animation: ApparitionMenu 800ms ease 500ms 1 normal both;
+  }
+  .entre {
+    animation: ApparitionMenu 800ms ease 650ms 1 normal both;
+  }
+  .entre2 {
+    animation: ApparitionMenu 800ms ease 800ms 1 normal both;
+  }
+  .entre3 {
+    animation: ApparitionMenu 800ms ease 950ms 1 normal both;
+  }
+  .entre4 {
+    animation: ApparitionMenu 800ms ease 1050ms 1 normal both;
+  }
+  .PLAT {
+    animation: ApparitionMenu 800ms ease 1200ms 1 normal both;
+  }
+  .plat {
+    animation: ApparitionMenu 800ms ease 1350ms 1 normal both;
+  }
+  .plat2 {
+    animation: ApparitionMenu 800ms ease 1500ms 1 normal both;
+  }
+  .plat3 {
+    animation: ApparitionMenu 800ms ease 1850ms 1 normal both;
+  }
+  .plat4 {
+    animation: ApparitionMenu 800ms ease 1950ms 1 normal both;
+  }
+  .DESSERT {
+    animation: ApparitionMenu 800ms ease 2000ms 1 normal both;
+  }
+  .dessert {
+    animation: ApparitionMenu 800ms ease 2150ms 1 normal both;
+  }
+  .dessert2 {
+    animation: ApparitionMenu 800ms ease 2300ms 1 normal both;
+  }
+  .dessert3 {
+    animation: ApparitionMenu 800ms ease 2500ms 1 normal both;
+  }
+  .dessert4 {
+    animation: ApparitionMenu 800ms ease 2600ms 1 normal both;
+  }
+  .descriptionPlat {
+  }
+}

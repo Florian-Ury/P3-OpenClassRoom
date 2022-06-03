@@ -1,14 +1,5 @@
-@mixin mobile-first {
+@mixin display-mobile {
   @media screen and (max-width: 768px){
     @content
   }
-}
-
-@mixin dark-color($colour: $colour-primary) {
-  @if ( lightness($colour) < 25% ) {
-    $colour: lighten($colour, 10%);
-  }@else{
-    $colour: darken($colour, 35%);
-  }
-  color: $colour;
 }

@@ -36,16 +36,15 @@
 
         }
         &__icon{
-          padding: 5px 20px;
-        }
-        &__icon:hover{
-          padding: 0px 20px;
-          color: $color-primary;
+          padding: 2px 20px;
         }
       }
       &__a:hover{
         background: rgba($color-primary,0.2);
+      }
+      &__a:hover &__a__icon {
         color: $color-primary;
       }
     }
+
 }

@@ -1,10 +1,13 @@
 
 @import "utils/variables";
 @import "utils/mixin";
+@import "utils/keyframes";
 @import "base/base";
 @import "Layout/footer";
 @import "Layout/navbar";
+@import "Layout/main";
 @import "Pages/project";
 @import "Layout/header";
 @import "Composants/pinfo";
 @import "Composants/description";
+@import "Composants/loadspinner";
