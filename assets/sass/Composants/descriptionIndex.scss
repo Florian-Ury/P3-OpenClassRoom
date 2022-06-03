@@ -1,0 +1,15 @@
+.description{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0px;
+    p{
+      font-size: 1.2em;
+      }
+    h1, p {
+      margin: 5px;
+    }
+}

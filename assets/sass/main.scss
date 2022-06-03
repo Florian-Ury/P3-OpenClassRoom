@@ -1,6 +1,5 @@
 
 @import "utils/variables";
-@import "utils/mixin";
 @import "utils/keyframes";
 @import "base/base";
 @import "Layout/footer";
@@ -9,5 +8,6 @@
 @import "Pages/project";
 @import "Layout/header";
 @import "Composants/pinfo";
-@import "Composants/description";
+@import "Composants/btn";
+@import "Composants/descriptionIndex";
 @import "Composants/loadspinner";
