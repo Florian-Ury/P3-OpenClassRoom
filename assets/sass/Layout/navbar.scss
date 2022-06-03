@@ -6,12 +6,21 @@
 
     &__ol {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: nowrap;
       margin: 5px;
+      @media only screen and (max-width: $breakpointMobile) {
+          flex-direction: column;
+      }
+      @media only screen and (max-width: $breakpointTablette) {
+        flex-direction: column;
+      }
       &__a{
         display: flex;
         justify-content: flex-start;
-        flex-wrap: wrap;
+        align-items: center;
+        flex-wrap: nowrap;
         padding: 15px 15px 15px 0px;
         background: #F2F2F2;
         margin: 15px 15px 15px 5px;
@@ -21,7 +30,7 @@
         &__p {
           padding: 1px 7px;
           font-size: 20px;
-          position: absolute;
+          left: 0;
           background: $color-primary;
           border-radius: 30px;
           color: white;
@@ -36,6 +45,7 @@
 
         }
         &__icon{
+          align-self: center;
           padding: 2px 20px;
         }
       }
