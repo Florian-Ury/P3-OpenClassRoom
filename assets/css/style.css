@@ -8,11 +8,9 @@
 }
 @keyframes SlideInRight {
   0% {
-    opacity: 0;
-    transform: translateX(250px);
+    transform: translateX(10px);
   }
   100% {
-    opacity: 1;
     transform: translateX(0);
   }
 }
@@ -30,11 +28,9 @@
 }
 @keyframes rotateIcon {
   0% {
-    opacity: 0;
     transform: rotate(-1turn);
   }
   100% {
-    opacity: 1;
     transform: rotate(0turn);
   }
 }
@@ -188,7 +184,7 @@ a {
   height: 300px;
   object-fit: cover;
 }
-.main__divmain {
+.main__content {
   padding: 15px;
   background: #F2F2F2;
   margin: -50px 0px 0px 0px;
@@ -196,23 +192,23 @@ a {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
 }
-.main__divmain__div {
+.main__content__title {
   display: flex;
   justify-content: space-between;
   padding: 10px 0px;
   align-items: center;
 }
-.main__divmain__section {
+.main__content__section {
   margin: 5px 0px;
   animation: ApparitionMenu 800ms ease 500ms 1 normal both;
 }
-.main__divmain__section__separator {
+.main__content__section__separator {
   display: inline-block;
   padding: 0px 30px;
   margin: 0px 0px 5px 0px;
   border-bottom: 2px solid #99E2D0;
 }
-.main__divmain__section__item {
+.main__content__section .card {
   display: flex;
   cursor: pointer;
   background: #fff;
@@ -224,15 +220,15 @@ a {
   animation: ApparitionMenu 800ms ease 500ms 1 normal both;
   overflow: hidden;
 }
-.main__divmain__section__item__div {
+.main__content__section .card__content {
   width: 100%;
 }
-.main__divmain__section__item__span {
+.main__content__section .card__content__span {
   display: flex;
   justify-content: space-between;
   margin-right: 10px;
 }
-.main__divmain__section__item__checkup {
+.main__content__section .card__checkup {
   display: flex;
   width: 0%;
   height: 62px;
@@ -244,7 +240,7 @@ a {
   transform: translateX(0px);
   transition: transform 0.3s, width 0.3s, font-size 0.3s ease-in-out;
 }
-.main__divmain__section__item:active .main__divmain__section__item__checkup {
+.main__content__section .card:hover .card__checkup {
   display: flex;
   height: 65px;
   width: 65px;
@@ -252,19 +248,22 @@ a {
   font-size: 20px;
   animation: SlideInLeft 0.5s ease 0s 1 normal forwards;
 }
-.main__divmain__section__item:active .iconMenu {
+.main__content__section .card:hover .iconMenu {
   animation: rotateIcon 1s ease 0s 1 normal forwards;
 }
 @media only screen and (max-width: 768px) {
-  .main__divmain__section__item:active .descriptionPlat {
+  .main__content__section .card:hover .descriptionPlat {
     width: 200px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
   }
 }
-.main__divmain__section__item:active .prix {
-  animation: SlideInRight 0.5s ease 0s 1 normal forwards;
+.main__content__section .card:hover .prix {
+  animation: SlideInRight 0.7s ease 0s 1 normal forwards;
+}
+.main .prix {
+  font-weight: bold;
 }
 .main .ENTRE {
   animation: ApparitionMenu 800ms ease 500ms 1 normal both;
