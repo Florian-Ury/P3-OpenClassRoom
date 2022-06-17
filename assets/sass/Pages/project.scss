@@ -19,6 +19,8 @@
     &__p-item {
       border: 1px solid white;
       border-radius: 20px;
+      position: relative;
+      z-index: 1;
       height: 100%;
       width: 25%;
       margin: 10px;
@@ -43,11 +45,14 @@
       &__div {
         display: flex;
         justify-content: flex-end;
+        position: relative;
+        z-index: 1;
         &__new{
           background: $color-tertiary;
           border: 1px solid $color-tertiary;
           text-align: center;
           position: absolute;
+          z-index: 1;
           width: 100px;
           padding: 5px;
           color: darken($color-tertiary, 35%);
