@@ -20,9 +20,30 @@
       padding: 10px 0px;
       align-items: center;
     }
+    .card-display{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      @media only screen and (max-width: $breakpointTablette) {
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+      }
+      @media only screen and (max-width: $breakpointMobile) {
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+      }
+    }
     &__section {
       margin: 5px 0px;
-      animation: ApparitionMenu 800ms ease 500ms 1 normal both;
+      width: 30%;
+      @media only screen and (max-width: $breakpointMobile) {
+        width: 90%;
+      }
+      @media only screen and (max-width: $breakpointTablette) {
+        width: 90%;
+      }
 
       &__separator {
         display: inline-block;
