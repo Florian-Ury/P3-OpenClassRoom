@@ -16,13 +16,14 @@
       @media only screen and (max-width: $breakpointTablette) {
         font-size: 15px;
       }
-      &__a{
+      &__li{
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-wrap: nowrap;
-        padding: 15px 15px 15px 0px;
+        padding: 15px 15px 15px 10px;
         background: #F2F2F2;
+        color: black;
         margin: 15px 15px 15px 5px;
         border-radius: 15px;
         -webkit-box-shadow: 0px 15px 22px 0px rgba(0,0,0,0.2);
@@ -35,24 +36,18 @@
           border-radius: 30px;
           color: white;
         }
-        &__li {
-          display: flex;
-          text-align: center;
-          color: black;
+        &__a {
           padding: 0px 25px;
-          font-size: 1.3em;
-          list-style: decimal;
-
-        }
-        &__icon{
-          align-self: center;
-          padding: 2px 20px;
+          &__icon{
+            align-self: center;
+            padding: 2px 20px;
+          }
         }
       }
-      &__a:hover{
+      &__li:hover{
         background: rgba($color-primary,0.2);
       }
-      &__a:hover &__a__icon {
+      &__li:hover &__li__a__icon {
         color: $color-primary;
       }
     }

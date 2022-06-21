@@ -122,13 +122,13 @@ a {
 .footer__svg path {
   fill: #fff;
 }
-.footer__ul__a__li {
+.footer__ul__li__a {
   color: #fff;
 }
-.footer__ul__a__li__icon1 {
+.footer__ul__li__a__icon1 {
   padding: 0px 21px 0px 0px;
 }
-.footer__ul__a__li__icon {
+.footer__ul__li__a__icon {
   padding: 0px 15px 0px 0px;
 }
 
@@ -155,19 +155,20 @@ a {
     font-size: 15px;
   }
 }
-.navbar__ol__a {
+.navbar__ol__li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  padding: 15px 15px 15px 0px;
+  padding: 15px 15px 15px 10px;
   background: #F2F2F2;
+  color: black;
   margin: 15px 15px 15px 5px;
   border-radius: 15px;
   -webkit-box-shadow: 0px 15px 22px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 15px 22px 0px rgba(0, 0, 0, 0.2);
 }
-.navbar__ol__a__p {
+.navbar__ol__li__p {
   padding: 1px 7px;
   font-size: 20px;
   left: 0;
@@ -175,22 +176,17 @@ a {
   border-radius: 30px;
   color: white;
 }
-.navbar__ol__a__li {
-  display: flex;
-  text-align: center;
-  color: black;
+.navbar__ol__li__a {
   padding: 0px 25px;
-  font-size: 1.3em;
-  list-style: decimal;
 }
-.navbar__ol__a__icon {
+.navbar__ol__li__a__icon {
   align-self: center;
   padding: 2px 20px;
 }
-.navbar__ol__a:hover {
+.navbar__ol__li:hover {
   background: rgba(147, 86, 220, 0.2);
 }
-.navbar__ol__a:hover .navbar__ol__a__icon {
+.navbar__ol__li:hover .navbar__ol__li__a__icon {
   color: #9356DC;
 }
 
@@ -272,7 +268,7 @@ a {
 .main__content__section .card__content {
   width: 100%;
 }
-.main__content__section .card__content__span {
+.main__content__section .card__content__descrip {
   display: flex;
   justify-content: space-between;
   margin-right: 10px;
