@@ -101,6 +101,10 @@
       }
 
       .card:hover .descriptionPlat {
+        width: 160px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
         @media only screen and (max-width: $breakpointMobile) {
           width: 200px;
           text-overflow: ellipsis;
@@ -161,7 +165,5 @@
   }
   .dessert4 {
     animation: ApparitionMenu 800ms ease 2600ms 1 normal both;
-  }
-  .descriptionPlat {
   }
 }
